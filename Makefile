@@ -20,7 +20,7 @@ all: $(LIB_NAME)
 
 # 生成共享库
 $(LIB_NAME): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) -g -o $@ $< $(LDFLAGS)
 
 # 清理生成的文件
 clean:
